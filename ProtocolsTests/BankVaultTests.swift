@@ -29,7 +29,7 @@ class BankSpec: QuickSpec {
                 expect(tooManyDigitsResponse).to(equal(false))
                 
                 // Every other number is even (beginning with first) test
-                let correctDigits = [0, 2, 2, 3, 4, 1, 6]
+                let correctDigits = [2, 2, 2, 3, 4, 1, 6]
                 let correctDigitsResponse = testVault.allowEntryWithPassword(correctDigits)
                 expect(correctDigitsResponse).to(equal(true))
                 
